@@ -1,0 +1,29 @@
+SET UP MAVEN CONSOLE APP
+create a simple project (skip archetype selection)
+group id : com.domain
+artifact id : cs10-enterprise-app-bootstrap
+
+CONFIGURE MAVEN COMPILER TO USE JAVA 8.
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+</build>
+
+CONFIGURE SPRING DEPENDENCIES
+<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+	</dependencies>
+
