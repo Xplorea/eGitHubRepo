@@ -4,12 +4,12 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean name="productRepository"
-		class="com.domain.repository.MongoDBRepository" />
+ <bean name="productRepository"
+		class="com.domain.repository.MongoDBRepository" /> 
 
 	<bean name="productService"
 		class="com.domain.service.ProductServiceImpl">
-			<!-- setter injection -->
+		<!-- 	setter injection -->
 		<property name="productRepository" ref="productRepository"></property>
 	</bean>
 </beans>

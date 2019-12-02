@@ -9,7 +9,7 @@
 
 	<bean name="productService"
 		class="com.domain.service.ProductServiceImpl">
-			<!-- setter injection -->
-		<!-- <property name="productRepository" ref="productRepository"></property> -->
+		<!-- 	setter injection -->
+		<property name="productRepository" ref="productRepository"></property>
 	</bean>
 </beans>
